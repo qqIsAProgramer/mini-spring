@@ -79,7 +79,7 @@ public final class ClassUtil {
                     //
                     if (protocol.equals("file")) {
                         // 获取包名路径
-                        // regex正则表达式: %20 ->
+                        // regex正则表达式: %20 -> ?
                         String packagePath = url.getPath().replaceAll("%20", " ");
                         // addClass
                         addClass(classSet, packagePath, packageName);
